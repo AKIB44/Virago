@@ -14,7 +14,7 @@ const Newsletter = () => {
   }
 
   return (
-    <section className="newsletter section-padding" style={{backgroundImage: 'url(https://source.unsplash.com/1920x1080/?textile,fabric,soft)'}}>
+    <section className="newsletter section-padding" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1920&q=80)'}}>
       <div className="container">
         <div className="newsletter-content">
           <div className="newsletter-icon">✉️</div>

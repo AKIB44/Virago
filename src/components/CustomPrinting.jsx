@@ -42,11 +42,12 @@ const CustomPrinting = () => {
           </div>
           <div className="custom-printing-image">
             <img 
-              src="https://source.unsplash.com/800x600/?textile,printing,design"
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
               alt="Custom Printing Service"
               className="custom-image"
+              loading="lazy"
               onError={(e) => {
-                e.target.src = 'https://via.placeholder.com/800x600/667eea/ffffff?text=Custom+Printing'
+                e.target.src = 'https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&w=800&q=80'
               }}
             />
           </div>

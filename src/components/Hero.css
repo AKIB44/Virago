@@ -15,7 +15,11 @@
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  will-change: transform;
+  /* Fallback gradient in case image doesn't load */
+  background-color: #667eea;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .hero-overlay {

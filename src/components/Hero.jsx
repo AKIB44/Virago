@@ -2,15 +2,16 @@ import React from 'react'
 import './Hero.css'
 
 const Hero = () => {
-  // Using reliable image URLs - luxury bathroom/spa themed
-  const heroImageUrl = 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920'
+  // Using direct Unsplash image URLs - properly formatted for deployment
+  // These URLs should work in both local and production environments
+  const heroImageUrl = 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80'
 
   return (
     <section id="home" className="hero">
       <div 
         className="hero-background" 
         style={{
-          backgroundImage: `url("${heroImageUrl}")`,
+          backgroundImage: `url(${heroImageUrl})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
