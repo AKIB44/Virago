@@ -2,8 +2,20 @@ import React from 'react'
 import './Hero.css'
 
 const Hero = () => {
+  // Using reliable image URLs - luxury bathroom/spa themed
+  const heroImageUrl = 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920'
+
   return (
     <section id="home" className="hero">
+      <div 
+        className="hero-background" 
+        style={{
+          backgroundImage: `url("${heroImageUrl}")`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <div className="container">
@@ -29,4 +41,3 @@ const Hero = () => {
 }
 
 export default Hero
-

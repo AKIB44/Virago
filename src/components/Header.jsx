@@ -43,6 +43,13 @@ const Header = () => {
             <li><a href="#about" onClick={() => setIsMobileMenuOpen(false)}>About</a></li>
             <li><a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</a></li>
           </ul>
+
+          <div className="header-actions">
+            <button className="cart-icon-btn" aria-label="Shopping cart">
+              <span className="cart-icon">🛒</span>
+              <span className="cart-badge">3</span>
+            </button>
+          </div>
         </nav>
       </div>
     </header>

@@ -41,9 +41,14 @@ const CustomPrinting = () => {
             </div>
           </div>
           <div className="custom-printing-image">
-            <div className="image-placeholder">
-              <span>Custom Design Showcase</span>
-            </div>
+            <img 
+              src="https://source.unsplash.com/800x600/?textile,printing,design"
+              alt="Custom Printing Service"
+              className="custom-image"
+              onError={(e) => {
+                e.target.src = 'https://via.placeholder.com/800x600/667eea/ffffff?text=Custom+Printing'
+              }}
+            />
           </div>
         </div>
       </div>
